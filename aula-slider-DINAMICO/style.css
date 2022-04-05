@@ -34,9 +34,11 @@ html,body{
     bottom:10px;
     transform:translateX(-50%);
     -ms-tranform:translateX(-50%);
+    transition:2s;
 }
 
 .bullets-nav span{
+    transition:2s;
     width:16px;
     height:16px;
     float:left;

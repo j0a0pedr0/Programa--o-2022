@@ -69,7 +69,7 @@ nav.mobile-menu ul li{
 }
 nav.mobile-menu ul li:hover{
     background-color:rgb(220,220,220);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 nav.mobile-menu ul li a{
@@ -241,13 +241,41 @@ section.container{
 .parte2{
     width:50%;
     float:right;
-    padding:140px 2% 90px 2%;
-    background-color:white;  
+    padding:130px 2% 90px 2%;
+    background-color:white;
+     
 }
-.sobre-autor{
+
+.scrollEquipe{
     max-width:600px;
-    padding-left:35px;
+    padding-left:20px;
+    overflow:hidden;
+    position:absolute;
+    
+}
+
+.scroll-wraper{
+    width:100%;
+    min-height:230px;
+    position:relative;
+    
+}
+
+.sobre-autor:first-child{
+    display:block;
+}
+
+.sobre-autor{
+    display:none;
+    width:100%;
+    padding-top:100%;
     margin-top:50px;
+    float:left;
+    padding: 0 20px;
+    position:absolute;
+    background-color: white;
+    top:0%;
+    left:0%;
 }
 
 .titulo-autor{
@@ -301,10 +329,13 @@ section.container{
 }
 
 .slider-bullets{
+    position:absolute;
     float:left;
     margin-top:8px;
     margin-left:32px;
     margin-top:40px;
+    top:76%;
+    left:20px;
 }
 .slider-bullets span{
     width:16px;
@@ -629,6 +660,20 @@ footer p:nth-of-type(2){
         float:none;
         margin-top:13px;
     }
+
+    .sobre-autor{
+        display:none;
+        width:100%;
+        padding-top:100%;
+        margin-top:0px;
+        float:left;
+        padding: 0 20px;
+        position:absolute;
+        background-color: white;
+        top:-0%;
+    }   
+    
+   
 }
 
 @media screen and (max-width: 414px){
@@ -645,11 +690,6 @@ footer p:nth-of-type(2){
         margin:16px;
     }
 
-
-   
-
-   
-
     .titulo-autor .img-autor{
         float:left;
         width:50%;
@@ -663,8 +703,29 @@ footer p:nth-of-type(2){
         background-repeat: no-repeat;
         background-size:cover;
     }
+
     .text-sessao1{
         padding-top:10px;
     }
     
+
+
+    .sobre-autor{
+        display:none;
+        width:100%;
+        padding-top:100%;
+        margin-top:0px;
+        float:left;
+        padding: 0 20px;
+        position:absolute;
+        background-color: white;
+        top:-10%;
+    }   
+    
+    .scroll-wraper{
+        width:100%;
+        min-height:340px;
+        position:relative;
+        
+    }
 }

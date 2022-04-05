@@ -27,6 +27,7 @@ $(function(){
 
 
 
+
     /*//////evento adiciondo nos circulos de opçoes de imagem logo abaixo dela q ao clicar poderá
      redirecionado o slider para a imagem requerida*/
     function cliqueSlider(){

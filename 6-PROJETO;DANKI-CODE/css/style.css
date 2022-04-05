@@ -32,6 +32,7 @@ header nav.menu-desktop{
 }
 header nav.menu-mobile{
     display:none;
+    
 }
 
 header nav.menu-desktop ul{
@@ -469,7 +470,7 @@ section.venda .line-h2 >  h2{
     top:0;
     left:0;
     height:20px;
-    width:30%;
+    width:0%;
     border-radius:20px;
     background-image: linear-gradient(to bottom,rgb(250, 246, 246),rgb(129, 129, 129));
 }
@@ -481,7 +482,7 @@ section.venda .line-h2 >  h2{
     border:1px solid black;
     z-index:2;
     position:absolute;
-    left:27%;
+    left:0%;
     top:-2;
 }
 .pointer-barra:hover {
@@ -658,7 +659,7 @@ section.venda-single .container-venda-single{
 .foto-destaque{
     width:90%;
     padding-top:50%;
-    background-image:url('../image/carro9.jpg');
+    /*background-image:url('../image/carro9.jpg');*/  
     background-size:100% 100%;
     background-repeat:no-repeat;
 }
@@ -721,12 +722,12 @@ section.venda-single .container-venda-single{
     overflow-x:hidden;
 }
 .nav-galeria-wraper{
-    width:200%;
+    /*width:200%;*/
 }
 .mini-img-wraper{
     float:left;
     padding:9px;
-    width:calc(33.3% * (100 / 200));
+    /*width:calc(33.3% * (100 / 200));*/
 }
 .mini-img{
     width:100%;
@@ -874,6 +875,7 @@ section .container-galeria .img-destaque-galeria{
     padding-top:60%;
     background-size:100% 100%;
     border:8px solid white;
+    cursor:pointer;
 }
 /*///////////////////////////FIM DA QUARTA PAGINA 'PAGINA GALERIA'*/
 
@@ -1111,6 +1113,7 @@ section .container-galeria .img-destaque-galeria{
         margin-top:40px;
         margin-right:20px;
         cursor:pointer;
+        
     }
     /*
     header nav.menu-mobile:hover ul{
@@ -1127,7 +1130,7 @@ section .container-galeria .img-destaque-galeria{
         list-style:none;
         text-align:center;
         background-color:white;
-        z-index:2;
+        z-index:7;
     }
 
     header nav.menu-mobile ul li{
