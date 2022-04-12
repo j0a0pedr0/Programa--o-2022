@@ -1,0 +1,25 @@
+.minhaclasse{
+    background-color:rgba(190,190,190,0.9)
+}
+
+.menu{
+    background:rgb(100,100,100);
+    padding:20px 0;
+}
+.menu-list ul{
+    display:inline-block;
+    padding-top:20px;
+}
+
+.menu-list li{
+    font-size: 18px;
+    display: inline;
+    text-align:left;
+}
+
+.menu-list a{
+    padding-top:40px;
+    padding-left:50px;
+    color:white;
+    text-decoration: none;
+}

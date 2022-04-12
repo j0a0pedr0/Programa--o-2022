@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   
+
+    <header class="menu minhaclasse">
+        <div class="container">
+            <div class="row">
+                <!-- Fixed navbar -->
+                <nav class="navbar navbar-inverse navbar-fixed-top">
+                    <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Danki Code</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MAIS<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header><!--menu-->
+
+    <div class="container" style="height:3000px">
+
+    
+
+        <div class="jumbotron">
+            <h1>Theme example</h1>
+            <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p>
+        </div>
+
+        <div class="row">
+            <button type="button" class="btn btn-lg btn-default">Default</button>
+            <button type="button" class="btn btn-lg btn-primary">Primary</button>
+            <button type="button" class="btn btn-lg btn-success">Success</button>
+            <button type="button" class="btn btn-lg btn-info">Info</button>
+            <button type="button" class="btn btn-lg btn-warning">Warning</button>
+            <button type="button" class="btn btn-lg btn-danger">Danger</button>
+            <button type="button" class="btn btn-lg btn-link">Link</button>
+        </div>
+
+        <div class="col-xs-12 col-md-6">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Cargo</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>João</td>
+                        <td>Administrador</td>
+                    </tr>
+
+                    <tr>
+                        <td>João</td>
+                        <td>Administrador</td>
+                    </tr>
+
+                    <tr>
+                        <td>João</td>
+                        <td>Administrador</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-xs-12 col-md-6">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Cargo</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>João</td>
+                        <td>Administrador</td>
+                    </tr>
+
+                    <tr>
+                        <td>João</td>
+                        <td>Administrador</td>
+                    </tr>
+
+                    <tr>
+                        <td>João</td>
+                        <td>Administrador</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <article>
+            <div class="page-header">
+                <h1>Titulo do meu artigo</h1>
+            </div>
+            <p>Lorem ipsum siler domor amet</p>
+        </article>
+
+        <h1>
+            <span class="label label-default">Default</span>
+            <span class="label label-primary">Primary</span>
+            <span class="label label-success">Success</span>
+            <span class="label label-info">Info</span>
+            <span class="label label-warning">Warning</span>
+            <span class="label label-danger">Danger</span>
+        </h1>
+
+        <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </button>
+
+        <div class="page-header">
+            <h1>Badges</h1>
+        </div>
+
+        <p>
+            <a href="#">Inbox <span class="badge">42</span></a>
+        </p>
+
+        <ul class="nav nav-pills" role="tablist">
+            <li role="presentation"><a href="#">Home <span class="badge">42</span></a></li>
+            <li role="presentation"  class="active"><a href="#">Profile <span class="badge">85</span></a></a></li>
+            <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
+        </ul>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                  <img alt="Brand" style="width:25px;height:25px;" src="./imagens/lupa.png">
+                </a>
+              </div>
+            </div>
+        </nav>
+
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+              </div>
+          
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">Link</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                  <button role="submit" type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Link</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+
+          <div class="row">
+              <div class="col-md-6">
+                <div style="display:none;" class="alert alert-success" role="alert">
+                    <strong>Well done!</strong> You successfully read this important alert message.
+                </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="../6-PROJETO;DANKI-CODE/image/carro6.jpg" alt="...">
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at quam facilisis, mattis erat quis, porttitor lorem. Proin
+                       semper accumsan enim non tempor. Maecenas tincidunt pellentesque quam, et molestie dolor tincidunt in. Duis ornare pelle
+                       ntesque dolor, dictum cursus justo consectetur id. Pellentesque in velit nisl. Donec quis metus sodales, vulputate turp
+                       is ac, efficitur sem. Sed rutrum nulla ut nunc vulputate, auctor dignissim tortor consequat. Praesent in risus condiment
+                       um lacus egestas egestas. Curabitur mi massa, mattis non nunc eu, sagittis venenatis velit. Nunc quis convallis mauris. 
+                       Nunc posuere enim vitae risus tincidunt, id laoreet sem laoreet. Donec libero nisl, pretium in suscipit et, tristique ne
+                       c mi. Suspendisse semper ac ipsum gravida congue. Cras fe
+                  </p>
+                  <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <img src="../6-PROJETO;DANKI-CODE/image/carro6.jpg" alt="...">
+                  <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at quam facilisis, mattis erat quis, porttitor lorem. Proin
+                         semper accumsan enim non tempor. Maecenas tincidunt pellentesque quam, et molestie dolor tincidunt in. Duis ornare pelle
+                         ntesque dolor, dictum cursus justo consectetur id. Pellentesque in velit nisl. Donec quis metus sodales, vulputate turp
+                         is ac, efficitur sem. Sed rutrum nulla ut nunc vulputate, auctor dignissim tortor consequat. Praesent in risus condiment
+                         um lacus egestas egestas. Curabitur mi massa, mattis non nunc eu, sagittis venenatis velit. Nunc quis convallis mauris. 
+                         Nunc posuere enim vitae risus tincidunt, id laoreet sem laoreet. Donec libero nisl, pretium in suscipit et, tristique ne
+                         c mi. Suspendisse semper ac ipsum gravida congue. Cras fe
+                    </p>
+                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <img src="../6-PROJETO;DANKI-CODE/image/carro6.jpg" alt="...">
+                  <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at quam facilisis, mattis erat quis, porttitor lorem. Proin
+                         semper accumsan enim non tempor. Maecenas tincidunt pellentesque quam, et molestie dolor tincidunt in. Duis ornare pelle
+                         ntesque dolor, dictum cursus justo consectetur id. Pellentesque in velit nisl. Donec quis metus sodales, vulputate turp
+                         is ac, efficitur sem. Sed rutrum nulla ut nunc vulputate, auctor dignissim tortor consequat. Praesent in risus condiment
+                         um lacus egestas egestas. Curabitur mi massa, mattis non nunc eu, sagittis venenatis velit. Nunc quis convallis mauris. 
+                         Nunc posuere enim vitae risus tincidunt, id laoreet sem laoreet. Donec libero nisl, pretium in suscipit et, tristique ne
+                         c mi. Suspendisse semper ac ipsum gravida congue. Cras fe
+                    </p>
+                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="progress col-md-6">
+            <div class="progress-bar progress-bar-success progress-bar-striped" style="padding:0;" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+              <span class="sr-only">40% Complete (success)</span>
+            </div>
+          </div>
+
+          <div class="page-header">
+            <h1>List groups</h1>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <ul class="list-group">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+            </div><!-- /.col-sm-4 -->
+            <div class="col-sm-4">
+              <div class="list-group">
+                <a href="#" class="list-group-item active">
+                  Cras justo odio
+                </a>
+                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item">Morbi leo risus</a>
+                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item">Vestibulum at eros</a>
+              </div>
+            </div><!-- /.col-sm-4 -->
+            <div class="col-sm-4">
+              <div class="list-group">
+                <a href="#" class="list-group-item active">
+                  <h4 class="list-group-item-heading">List group item heading</h4>
+                  <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                </a>
+                <a href="#" class="list-group-item">
+                  <h4 class="list-group-item-heading">List group item heading</h4>
+                  <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                </a>
+                <a href="#" class="list-group-item">
+                  <h4 class="list-group-item-heading">List group item heading</h4>
+                  <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                </a>
+              </div>
+            </div><!-- /.col-sm-4 -->
+          </div>
+          
+
+
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('[role=presentation]').click(function(){
+                $('.alert-success').fadeIn();
+                $('[role=presentation]').removeClass('active');
+                $(this).addClass('active');
+            })
+
+            $('[role=submit]').click(function(){
+                $('.alert-success').fadeIn();
+            });
+
+            $('.progress-bar').animate({'width':'100%',},6000);
+
+        })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,248 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Open Sans";
+}
+
+html,body{
+    height:100%;
+}
+
+/*
+Classes Auxiliares
+*/
+
+.center{
+    margin: 0 auto;
+    max-width:1280px;
+    padding:0 2%;
+}
+
+.clear{clear:both;}
+
+section.main{
+    background-image: url('../imagens/escritório.jpg');
+    background-size:cover;
+    background-position:center;
+    width:100%;
+    padding:15px 0;
+    min-height:800px;
+    position:relative;
+}
+section header{
+    z-index:2;
+    position:relative;
+    padding-bottom:10px;
+    border-bottom:1px solid white;
+}
+.layers{
+    z-index:1;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+}
+.icons-social{
+    float:right;
+}
+.icons-social a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    margin:0 11px;
+}
+.logo{
+    margin-top:23px;
+    float:left;
+    color:white;
+    font-size:33px;
+    font-weight:bold;
+}
+nav.desktop{
+    margin-top:23px;
+    float:right;
+}
+nav.desktop ul{
+    list-style-type:none;
+}
+nav.desktop ul li{
+    display:inline-block;
+    margin:0 15px;
+    font-size:25px;
+    font-weight:lighter;
+}
+nav.desktop ul li a{
+    text-decoration:none;
+    color:white;
+}
+.conteudo-header{
+    z-index:3;
+    position:relative;
+    max-width:700px;
+    margin:80px 0;
+}
+.conteudo-header h2{
+    font-size:90px;
+    color:white;
+    font-weight:lighter;
+    margin-bottom:20px;
+}
+.conteudo-header h2 > span{
+    color:#2692ff;
+}
+.conteudo-header p{
+    color:white;
+    font-size:22px;
+    width:calc(100% + 200px);
+}
+.conteudo-header a{
+    display:block;
+    width:177px;
+    height:44px;
+    background:#2693ff;
+    color:white;
+    line-height:44px;
+    text-align:center;
+    text-decoration:none;
+    margin-top:30px;
+    border-radius:22px;
+}
+
+.chamada-planos{
+    width:100%;
+    text-align:center;
+    padding:55px 2%;
+    background-color:rgb(225,225,225);
+}
+.chamada-planos h2{
+    display: inline-block;
+    border-top:2px solid #2692ff;
+    color:#2692ff;
+    font-size:40px;
+    text-transform:uppercase;
+    font-weight:lighter;
+}
+section.box-planos{
+    padding:40px 0;
+}
+section.box-planos > .center{
+    display:flex;
+    flex-wrap:nowrap;
+}
+section.box-planos .box-planos-single{
+    width:33.3%;
+    padding:0 3%;
+}
+.box-planos-wraper{
+    border-radius:30px;
+    width:100%;
+    border:2px solid #ccc;
+    border-top: 3px  #2692ff;
+    -webkit-box-shadow: 19px 10px 20px 5px rgba(0,0,0,0.64);
+    -moz-box-shadow: 19px 10px 20px 5px rgba(0,0,0,0.64);
+    box-shadow: 19px 10px 20px 5px rgba(0,0,0,0.64);
+}
+section.box-planos .box-planos-single .box-planos-wraper > h2{
+    background:#2692ff;
+    color:white;
+    text-align:center;
+    padding:3px;
+    font-weight:lighter;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position:relative;
+    top:0px;
+}
+section.box-planos .pontos-plano{
+    padding:15px 0 25px 0;
+}
+
+section.box-planos .box-planos-single p{
+    font-size:22px;
+    color:#777777;
+    margin-top:15px;
+    margin-left:15px;
+} 
+
+.preco{
+    padding:15px 0;
+    margin-top:14px;
+    text-align:center;
+}
+
+.preco h2{
+    font-size:24px;
+    color:#777;
+    display:inline-block;
+    border-top:1px solid #ccc;
+    padding:0 40px;
+}
+
+section.paralax{
+    width:100%;
+    min-height:300px;
+    background-image:url('../imagens/paralax.jpg');
+    background-size:cover;
+    background-position:top;
+    background-attachment: fixed;
+    position:relative;
+    padding:34px 0;
+}
+.layers-paralax{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    background-color:rgba(20,20,20,0.6);
+}
+section.paralax .center{
+    z-index:2;
+    position:relative;
+    max-width:1000px;
+    margin:40px auto;
+    color:white;
+}
+section.paralax h2{
+    text-align:center;
+}
+section.paralax p{
+    margin-top:20px;
+}
+
+
+@media screen and (max-width:940px){
+    .conteudo-header p{
+        color:white;
+        font-size:22px;
+        width:100%;
+    }
+}
+@media screen and (max-width:968px ){
+    section.box-planos > .center{
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    section.box-planos .box-planos-single{
+        width:80%;
+        padding:0 3%;
+        margin-bottom:80px;
+        position:relative;
+        left:50%;
+        transform:translateX(-50%);
+    }
+
+    section.box-planos .box-planos-single p{
+        font-size:22px;
+        color:#777777;
+        margin-top:15px;
+        text-align:center;
+    }
+}
