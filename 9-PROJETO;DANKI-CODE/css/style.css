@@ -1,0 +1,137 @@
+
+.navbar-cor{
+    background-color:#d7ccc8 !important;
+}
+.navbar{
+    background-color:white;
+}
+.white{
+    color: white !important;
+}
+.center-x{
+    transform: translateX(-50%);
+    position:relative;
+    left:50%;
+}
+
+
+/*Estilos porprios*/
+
+.box-fix{
+    position:relative;
+    top:57px;
+}
+
+section.bg-top{
+    width:100%;
+    height:600px;
+    background-image:url('../imagens/bg-1.jpeg');
+    background-size:100% 100%;
+    background-position:bottom;
+    position:relative;
+}
+
+.zindex{
+    z-index:2;
+    position:relative;
+}
+.overlay{
+    z-index:1;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color:rgba(40,40,40,0.6);
+
+}
+
+.texto-bg{
+    color:white;
+    margin-top:140px;
+}
+.texto-bg > p{
+    margin-top:40px;
+}
+
+section.chamada{
+    background:#3fa3c5;
+    padding:30px 0;
+    color:white;
+}
+
+section.chamada h2{
+    font-size:32px;
+}
+
+section.sobre{
+    padding:69px 0;
+}
+.custom-title{
+    position:relative;
+    text-align:left;
+    margin-bottom:35px;
+}
+.custom-title h2{
+    display: inline-block;
+    position:relative;
+    left:60px;
+    background-color: rgb(225,225,225);
+    padding:0 20px;
+    color:#888;
+    font-size:32px;
+    text-align:center;
+    z-index: 2;
+}
+.custom-title div{
+    z-index: 1;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:21px;
+    background-color:#3fa3c5;
+    width:100%;
+    height:4px;
+}
+
+section.diferenciais{
+    padding:70px 0;
+    color:#646464;
+}
+section.diferenciais h2{
+    padding:10px 0;
+    border-bottom:1px dotted black;
+    position:relative;
+}
+
+section.diferenciais .custom-title{
+    margin-bottom:34px;
+}
+
+@media screen and (max-width:770px ){
+    .texto-bg{
+        margin-top:30px;
+    }
+}
+
+@media screen and (max-width:390px ){
+    .texto-bg h2{
+        font-size:24px;
+    }
+    .texto-bg p{
+        margin-top:20px;
+        font-size:14px;
+    }
+    .center-x-mobile{
+        transform: translateX(-50%);
+        position:relative;
+        left: 50% !important;;
+    }
+    section.sobre .custom-title h2{
+            left:0px;
+    }
+
+    section.diferenciais .custom-title h2{
+        font-size:24px;
+    }
+}

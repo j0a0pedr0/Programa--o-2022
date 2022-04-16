@@ -162,7 +162,7 @@ html body{
 }
 .section-1{
     height: 550px;
-    padding:90px 0;
+    padding:90px 2%;
 }
 .section-1 h2{
     text-align:center;
@@ -270,7 +270,12 @@ html body{
    }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 500px){
+
+    .header .center > img{
+        width:120px;
+    }
+
     .input-container span,.form p{
         display: inline-block;
         width:100%;
@@ -324,5 +329,11 @@ html body{
     .container-single p{
         padding:10px 25px;
         font-size:13px;
+    }
+
+    .container-single{
+        float:center;
+        width:100%;
+        
     }
 }

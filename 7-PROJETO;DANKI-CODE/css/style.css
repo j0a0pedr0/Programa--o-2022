@@ -2,11 +2,11 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: "Open Sans";
 }
 
 html,body{
     height:100%;
+    font-family: "Open Sans";
 }
 
 /*
@@ -61,10 +61,16 @@ section header{
     font-size:33px;
     font-weight:bold;
 }
+nav.mobile{
+    display:none;
+    float:right;
+}
+
 nav.desktop{
     margin-top:23px;
     float:right;
 }
+
 nav.desktop ul{
     list-style-type:none;
 }
@@ -79,7 +85,7 @@ nav.desktop ul li a{
     color:white;
 }
 .conteudo-header{
-    z-index:3;
+    z-index:1;
     position:relative;
     max-width:700px;
     margin:80px 0;
@@ -206,25 +212,154 @@ section.paralax .center{
     z-index:2;
     position:relative;
     max-width:1000px;
-    margin:40px auto;
+    margin:140px auto;
     color:white;
+    padding:0 4%;
 }
 section.paralax h2{
     text-align:center;
+    font-size:53px;
+    font-weight:lighter;
 }
 section.paralax p{
-    margin-top:20px;
+    font-size:20px;
+    margin-top:90px;
 }
 
 
-@media screen and (max-width:940px){
-    .conteudo-header p{
-        color:white;
-        font-size:22px;
+
+section.final-section{
+    padding:80px 0;
+    display:flex;
+}
+section.final-section > .center{
+    display: flex;
+    flex-wrap:wrap;
+    max-width:1700px;
+}
+.contato{
+    padding:0 4%;
+}
+.time{
+    padding:0 4%;
+}
+.flex-div{
+    display: flex;
+    flex-wrap:wrap;
+    margin-top:38px;
+}
+
+.w50{
+    width:50%;
+}
+.efeito-borda{
+    width:57px;
+    border-bottom:3px solid #ccc;
+    position:absolute;
+    transition:0.7s;
+}
+
+
+section.final-section h2{
+    font-size:23px;
+    font-weight:lighter;
+    color:#777777;
+    position:relative;
+}
+section.final-section h2:hover .efeito-borda{
+    width:180px;
+    transition:0.7;
+}
+
+section.final-section .contato input:not([type=submit]){
+    width:100%;
+    height:45px;
+    border:2px solid #ccc;
+    padding-left:8px;
+    margin-top:13px;
+    display:block;
+}
+
+section.final-section .contato textarea{
+    width:100%;
+    height:140px;
+    border:2px solid #ccc;
+    margin-top:15px;  
+}
+section.final-section .contato input[type=submit]{
+    width:100px;
+    height:33px;
+    cursor:pointer;
+    border:0;
+    border-radius:34px;
+    background-color:#2693ff;
+    margin-top:12px;
+}
+
+.time > .flex-div > .w50{
+    width:46%;
+    margin:15px 2%;
+}
+
+.equipe-single{
+    border:2px solid #ccc;
+    min-height:250px;
+    padding:0 1%;;
+}
+
+
+.equipe-single .box-avatar{
+    display:inline-block;
+    width:25%;
+    height:70px;
+    border-radius:50%;
+    background-image:url('../imagens/autor.jpg');
+    background-size:100% 100%;
+    background-position:center;
+    position:relative;
+    top:9px;
+    left:-4px;
+}
+.equipe-single .info-usuario{
+    display:inline-block;
+    width:70%;
+}
+.equipe-single .info-usuario p:nth-of-type(1){
+    font-size:17px;
+}
+
+.equipe-single .topo-box-usuario{
+    padding-bottom:15px;
+}
+.descricao-usuario-box{
+    width:80%;
+    border-top:2px solid #ccc;
+    margin:0 auto;
+}
+.equipe-single .descricao-usuario-box p{
+    color:#999999;
+    font-weight:lighter;
+    font-size:16px;
+}
+
+footer{
+    width:100%;
+    padding:20px 0;
+    background-color:rgb(39, 37, 37);
+    text-align:center;
+}
+footer p{
+    color:white;
+    font-size:14px;
+}
+
+
+
+@media screen and (max-width:1200px ){
+    .w50{
         width:100%;
+        margin-bottom:30px;
     }
-}
-@media screen and (max-width:968px ){
     section.box-planos > .center{
         display:flex;
         flex-wrap:wrap;
@@ -244,5 +379,159 @@ section.paralax p{
         color:#777777;
         margin-top:15px;
         text-align:center;
+    }
+    .time > .flex-div{
+    text-align: center;
+    }
+    .time .flex-div > .equipe-single{
+        position:relative;
+        left:50%;
+        transform:translateX(-50%);
+    }
+    .time > .flex-div > .w50{
+        width:78%;
+        margin:15px 0%;
+    }
+    .equipe-single > .topo-box-usuario{
+        margin:0 auto;
+        width:90%;
+        text-align:center;
+    }
+    .equipe-single .box-avatar{
+        position:relative;
+        top:10px;
+        left:-4px;
+        width:50px;
+        height:50px;
+        text-align: right;
+    }
+    .equipe-single .info-usuario{
+        width:180px;
+    }
+}
+@media screen and (max-width:940px){
+    .conteudo-header p{
+        color:white;
+        font-size:22px;
+        width:100%;
+    }
+}
+
+@media screen and (max-width:560px ){
+
+    .logo{
+        margin-top:23px;
+        float:left;
+        color:white;
+        font-size:38px;
+        font-weight:bold;
+    }
+
+    .desktop{
+        display:none;
+    }
+    
+    nav.mobile{
+        display:block;
+    }
+    nav i{
+        font-size:33px;
+        color:white;
+        float:right;
+        cursor:pointer;
+        position:relative;
+        top:40px;
+        left:-10px;
+    }
+    nav.mobile ul{
+        width:100%;
+        display:none;
+        padding:20px 3%;
+        position:absolute;
+        top:190;
+        left:0;
+        list-style:none;
+        text-align:center;
+        background-color:white;
+        z-index:7;
+        margin-top:80px;
+    }
+
+    nav.mobile ul li{
+        text-decoration:none;
+        margin-top:30px;
+        border-bottom:3px solid rgb(139, 139, 139);
+    }
+    nav.mobile ul li:hover{
+        background-color:#ccc;
+    }
+    nav.mobile ul li a{
+        text-decoration:none;
+        color:black;
+        font-style:italic;
+        font-size:49px;
+    }
+
+    .conteudo-header h2{
+        font-size:40px;
+        color:white;
+        font-weight:lighter;
+        margin-bottom:20px;
+    }
+    .conteudo-header h2 > span{
+        color:#2692ff;
+    }
+    .conteudo-header p{
+        color:white;
+        font-size:19px;
+    }
+    .conteudo-header a{
+        display:block;
+        position:relative;
+        top:28px;
+        margin:0 auto;
+    }
+
+    section.paralax{
+        padding:1px 0;
+    }
+    section.paralax .center{
+        z-index:2;
+        position:relative;
+        max-width:1000px;
+        margin:90px auto;
+        color:white;
+        padding:0 4%;
+    }
+    section.paralax h2{
+        margin-top:30px;
+        text-align:center;
+        font-size:40px;
+        font-weight:lighter;
+    }
+    section.paralax p{
+        font-size:17px;
+        margin-top:40px;
+    }
+   
+
+    section.final-section .contato input[type=submit]{
+        margin:14px auto;
+        position:relative;
+        left:50%;
+        transform:translateX(-50%);  
+        width:120px;
+        height:58px; 
+        font-size:20px;
+    }
+    
+
+}
+
+
+@media screen and (max-width:450px){
+    .time > .flex-div > .w50{
+        width:100%;
+        margin:15px 0%;
     }
 }
