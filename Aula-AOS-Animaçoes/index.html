@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>aula de AOS JS</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        p{
+            height:1700px;
+        }
+        div{
+            width:300px;
+            height:300px;
+            background:red;
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+    <div data-aos="flip-left" data-aos-duration="3000"></div>
+    <div style="background:blue;" data-aos="flip-right" data-aos-duration="2000"></div>
+    <div style="background:rgb(255, 145, 0);" data-aos="zoom-out-down" data-aos-duration="1000"></div>
+    <div style="background:rgb(87, 196, 150);" data-aos="fade-down-right" data-aos-duration="1000"></div>
+    <div style="background:rgb(223, 70, 190);" data-aos="fade-right"data-aos-duration="2000" ></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

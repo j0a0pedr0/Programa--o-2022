@@ -13,3 +13,6 @@ a > img{
     width:200px;
 }
 
+div.container input{
+    display:block;
+}

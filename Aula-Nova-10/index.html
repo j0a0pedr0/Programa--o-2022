@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-Nova-10</title>
+</head>
+<body>
+    <h1 id="text-main">olha,</h1>
+        <p>Olá</p>
+    </div>
+    <p>Hey ow!</p>
+    <p>Hey ow!</p>
+    <p>Hey ow!</p>
+
+    <p>Hey ow!</p>
+    <p>Hey ow!</p>
+    <script>
+
+function mensagem(){
+    alert('Hey!');
+}
+
+        window.onload = function(){
+            var el = document.getElementById('text-main');
+            el.innerHTML = el.innerHTML+"olá mundo";
+
+            el.style.background = "green";
+            el.style.textAlign = "center";
+            el.style.border = "3px solid lightblue"
+
+            //var el2 = document.querySelector('p');
+
+            //el2.style.color = "red";
+
+            var elementos = document.querySelectorAll('p');
+            for(var i = 2; i < elementos.length; i++){
+                elementos[i].style.background = "gold";
+               
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

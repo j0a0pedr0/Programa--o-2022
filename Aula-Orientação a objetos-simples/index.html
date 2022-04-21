@@ -1,0 +1,28 @@
+<script >
+    
+    var pessoa1 = new pessoa('Guilherme','19','80kg');
+    var pessoa2 = new pessoa('joao pedro','22','93kg');
+    var pessoa3 = new pessoa('andre','23',function(){
+        alert('Hey man');
+        alert('VC tem 10 segundos');
+        alert('Corra man');
+    });
+
+    var pessoa4 = new pessoa('joonhy','30','texto')
+    
+    pessoa2.func();
+
+    function pessoa(nome,idade,callback){
+        this.nome = nome;
+        this.idade = idade;
+        this.callback = callback;
+        console.log(this.nome);
+
+        this.func = function(){
+            alert(nome);
+        }
+        
+    }
+
+    pessoa3.callback();
+</script>

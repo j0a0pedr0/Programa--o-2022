@@ -1,0 +1,10 @@
+body{
+    background:blue;
+}
+:-ms-lang(x), body {background: black; }
+@-moz-document url-prefix(){
+    body{
+        background:green;
+    }
+}
+:-o-lang(x), body {background:lightblue;}

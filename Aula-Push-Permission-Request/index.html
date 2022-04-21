@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/0.0.11/push.min.js"></script>
+    <script>
+        //push.permission.request();
+        //push.permission.get();
+
+        if(Push.Permission.get() != 'granted'){
+            Push.Permission.request();
+        }
+
+
+        console.log(Push.Permission.get());
+        if(Push.Permission.get() == "granted"){
+        Push.create('Olá da Danki Code!',{
+            body: 'Esta é uma Notificação',
+            icon: 'imagens/autor.jpg',
+            timeout: 3000,
+
+            onclick: function(){
+                window.location.href="https://cursos.dankicode.com/campus/curso-front-end-completo/projeto-4-form-de-contato-e-adentos";
+            }
+        });
+        }
+    </script>
+</body>
+</html>

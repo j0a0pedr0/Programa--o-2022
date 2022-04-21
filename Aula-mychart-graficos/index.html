@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" style="max-width:800px;margin:0 auto;padding:40px 2%;"><canvas id="myChart"></canvas></div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var Chart = new Chart(ctx, {
+        type: 'polarArea',
+        data:{
+    datasets: [{
+        data: [10, 50, 80],
+        backgroundColor:[
+            'rgba(138, 58, 12, 0.7)',
+            'rgba(168, 192, 30, 0.7)',
+            'rgba(54, 30, 192, 0.2)'
+        ],
+        hoverBorderColor:[
+            'rgba(0,0,0,1)',
+            'rgba(0,0,0,1)',
+            'rgba(0,0,0,1)'
+        ]
+    }],
+
+    // These labels appear in the legend and in the tooltips when hovering different arcs
+    labels: [
+        'Red',
+        'Yellow',
+        'rosa'
+    ]
+}
+    });
+    </script>
+      
+
+</body>
+</html>

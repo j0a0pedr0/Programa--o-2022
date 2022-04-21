@@ -16,6 +16,10 @@
 
 
 /*Estilos porprios*/
+html,body{
+    overflow-y: scroll;
+    -webkit-overflow-scrolling:touch;
+}
 
 .box-fix{
     position:relative;
@@ -104,13 +108,60 @@ section.diferenciais h2{
     position:relative;
 }
 
+section.convite{
+    background-color:#3fa3c5;
+    padding:30px 3%;
+}
+
+section.convite h2{
+    color:white;
+    font-size:32px;
+}
+
+section.convite input[type=email]{
+    width:calc(100% - 100px);
+}
+section.convite buttom{
+    width:100px;
+}
 section.diferenciais .custom-title{
     margin-bottom:34px;
+}
+
+section.contato{
+    background-color:rgb(225,225,225);
+    padding:60px 2%;
+}
+footer{
+    background-color:#313131;
+    padding:30px 0;
+    color:white;
+}
+footer ul li{
+    list-style: none;
+    list-style-position:inside;
+}
+footer ul li a{
+    color:white;
+}
+footer .groups-btns a{
+    margin-left:17px;
+    font-size:19px;
 }
 
 @media screen and (max-width:770px ){
     .texto-bg{
         margin-top:30px;
+    }
+
+    section.convite h2{
+        margin-top:15px;
+    }
+    section.convite input[type=email]{
+        margin-top:15px;
+    }
+    section.convite buttom{
+        margin-top:15px;
     }
 }
 
@@ -134,4 +185,21 @@ section.diferenciais .custom-title{
     section.diferenciais .custom-title h2{
         font-size:24px;
     }
+
+    section.convite{
+        background-color:#3fa3c5;
+        padding:20px 2%;
+    }
+
+    section.convite i{
+        display: block;
+        width:100%;
+    }
+    section.convite h2{
+        font-size:22px;
+    }
+
+    
+
+    
 }

@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+    position:relative;
+    width:1000;
+    padding:16px 10%;
+    margin:0 auto;
+    background-color: #558b2f;
+}
+.clear{
+    clear:both;
+}
+
+.logo-marca{
+    float:left;
+    color:white;
+}
+
+.menu-desktop{
+    float:right;
+}
+
+nav.menu-desktop > ul{
+    list-style-type: none;
+}
+nav.menu-desktop > ul > li{
+    display:inline-block;
+    margin:0 15px;
+    font-size:23px;
+    position:relative;
+}
+nav.menu-desktop ul li > a{
+    text-decoration: none;
+    color:white;
+}
+nav.menu-desktop a:hover{
+    text-decoration: underline;
+}
+nav.menu-desktop > ul > li:hover > ul.submenu-desktop{
+    display:block;
+}
+
+ul.submenu-desktop{
+    display:none;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:24px;
+    width:300px;
+    padding:8px 0px 0px 0px;
+    background:#7cb342;
+    list-style-type:none;
+}
+ul.submenu-desktop > li{
+    padding:8px 0;
+    border-bottom:2px solid white;
+    text-align:center;
+}
+ul.submenu-desktop i{
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:-4px;
+    color:white;
+}
+ul.submenu-desktop li a{
+    cursor:pointer;
+}
+ul.submenu-desktop-2{
+    list-style-type: none;
+    display:none;
+}
+ul.submenu-desktop-2 li{
+    padding:8px 0;
+    text-align: center;
+    border-bottom:2px solid #95e276;
+    font-size:18px;
+    color: #1e681b !important;;
+}
+ul.submenu-desktop-2 li a{
+    cursor: pointer;
+    color: #1e681b !important;;
+}
+
+nav.menu-mobile{
+    display:none;
+    float:right;
+}
+nav.menu-mobile i{
+    font-size:23px;
+    color:white;
+    cursor:pointer;
+}
+nav.menu-mobile > ul{
+    background-color: #dcedc8;
+    display:none;
+    position:absolute;
+    left:0;
+    top:40px;
+    width:100%;
+    padding:17px 0px 0px 0px;
+    list-style-type:none;
+}
+nav.menu-mobile > ul > li{
+    padding:16px 20px;
+    border-bottom:3px solid black;
+    display:inline-block;
+    width:100%;
+}
+nav.menu-mobile > ul > li > a{
+    font-size:23px;
+    color:#33691e;
+    text-decoration: none;
+    cursor:pointer;
+}
+ul.submenu-mobile{
+    display:none;
+    padding:8px 20px;
+    list-style-type:none;
+}
+
+ul.submenu-mobile li i{
+    color:black;
+    font-size:14px;
+}
+ul.submenu-mobile li a{
+    text-decoration: none;
+    color:#7cb342;
+    cursor:pointer;
+}
+ul.submenu-mobile-2{
+    display:none;
+    padding:8px 20px;
+    list-style-type:none;
+}
+
+@media screen and (max-width:768px){
+    nav.menu-desktop{
+        display:none;
+    }
+    nav.menu-mobile{
+        display:block;
+    }
+}
