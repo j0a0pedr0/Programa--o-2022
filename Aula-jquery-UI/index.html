@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <title></title>
+    <style>
+        div.green{
+            width:400px;
+            height:400px;
+            background:rgb(55, 161, 46);
+            border:1px solid #000;
+            position:relative;
+            
+        }
+        div.red{
+            width:400px;
+            height:400px;
+            background:rgb(212, 63, 63);
+            border:1px solid #000;
+            position:relative;
+        }
+        .ui-effects-transfer {
+            border:1px dotted black;
+        }
+    </style>
+</head>
+<body>
+
+<div id="toggle" class="green"></div>
+<div id="toggle" class="red"></div>
+
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/jquery-migrate-3.3.2.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>   
+    <script>
+       /* $('div').click(function(){
+            var i = 1 - $('div').index(this);
+            $(this).effect("transfer",{to:$('div').eq(i) }, 1300);
+        });
+        */
+       $(document).click(function(){
+           $("div").toggle("explode");
+       })
+    </script>
+</body>
+</html>

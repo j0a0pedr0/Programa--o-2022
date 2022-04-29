@@ -1,0 +1,730 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'roboto';
+}
+/*Classes Auxiliares*/
+.clear{clear:both;}
+.container{max-width:1060px;padding:0 2%;margin:0 auto;}
+
+
+
+
+
+/*///////////////////////Inicio da SEssao ------//////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*///////////////////////FIM da SEssao --------//////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////*/
+
+
+                          /*Estilos Site*/
+
+/*//////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+////////////////////// INICIO DA Sessão header-master///////////////////////////////////*/
+section.header-master{
+    width:100%;
+    padding:30px 0;
+    min-height:700px;
+    background-image:url("../imagens/bg_01.png");
+    background-size:cover;
+    background-position:center;
+}
+section.header-master header{
+    border-bottom:3px solid rgba(71,83,88,0.14);
+    padding-bottom:20px;
+}
+div.logo{
+    float:left;
+    width:166px;
+    height:64px;
+    background-image:url('../imagens/logo.png');
+    background-size:100% 100%;
+}
+nav.mobile ul{
+    display:none;
+}
+nav.mobile i{
+    display:none;
+}
+header{
+    position:relative;
+}
+header nav.desktop{
+    float:left;
+    padding-left:50px;
+}
+header nav.desktop ul{
+    list-style-type:none;
+}
+header nav.desktop li{
+    display:inline-block;
+    font-size:16px;
+    margin:0 15px;
+}
+nav.desktop ul{
+    position:relative;
+}
+.desktop li.selected a{
+    color:#509d87;
+}
+.desktop li.selected span{
+    position:absolute;
+    bottom:0;
+    width:24px;
+    height:3px;
+    background:#509d87;
+}
+header .desktop li > a{
+    font-size:17px;
+    text-decoration:none;
+    color:white;
+}
+div.telefone-header{
+    float:right;
+    position:relative;
+    top:-27px;
+    -ms-transform: translateY(100px);
+}
+span.telefone-header{
+    font-size:25px;
+    color:white;
+    padding-left:40px;
+    float:right;
+}
+.content-header{
+    padding:70px 0;
+}
+.content-header .one{
+    float:left;
+    width:50%;
+    padding-top:60px;
+}
+.content-header .one h2{
+    color:#509d87;
+    font-weight:normal;
+    font-size:37px;
+}
+.content-header .one p{
+    padding:24px 0;
+    font-size:17px;
+}
+.content-header .one p b{
+    font-weight:bold;
+    font-size:19px;
+}
+.content-header .one form input{
+    display:inline-block;
+}
+.content-header .one form input[type=email]{
+    width:251px;
+    height:50px;
+    border:4px solid #ccc;
+    border-radius:100px;
+    padding-left:16px;
+}
+.content-header .one form input[type=email]:focus{
+    outline:0;
+}
+.content-header .one form input[type=submit]{
+    background-color:#00daaa;
+    color:white;
+    cursor:pointer;
+    border:0;
+    height:50px;
+    padding:0 30px;
+    border-radius:20px;
+    font-size:15px;
+}
+.content-header .one span{
+    color:#509d87;
+    font-size:13px;
+    margin-top:20px;
+    display:block;
+}
+.content-header .two{
+    width:50%;
+    float:left;
+    padding:0 40px;
+}
+.content-header .two img{
+    float:left;
+    width:50%;
+    border:14px solid rgba(0,0,0,0)
+}
+
+/*///////////////////////FIm da SEssao HEADER-MASTER//////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*///////////////////////Inicio da SEssao Diferenciais//////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////*/
+
+section.diferenciais{
+    padding:40px 0;
+}
+section.diferenciais .container{
+    display:flex;
+    flex-wrap:wrap;
+}
+section.diferenciais .diferencial-single{
+    width:33.3%;
+    margin-bottom:50px;
+    padding:0 10px;
+}
+.diferencial-single img{
+    max-width:100%;
+}
+.diferencial-single h2{
+    font-size:30px;
+
+}
+.diferencial-single h2  b{
+    color:#7dd5b0;
+}
+.diferencial-single p{
+    color:#2d2d2d;
+    font-size:14px;
+    font-weight:bold;
+}
+
+/*///////////////////////FIM da SEssao Diferenciais//////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////*/
+
+
+/*///////////////////////Inicio da SEssao sobre//////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////*/
+
+
+
+section.sobre  .container{
+    display: flex;
+    max-width:1480px;
+    position:relative;
+    left:-10%;
+}
+section.sobre .sobre-container{
+    width:70%;
+    
+}
+
+section.sobre .sobre-container2{
+    width:calc(30% + 200px);
+    padding-left:70px;
+}
+.sobre-container img{
+    max-width:100%;
+}
+.sobre-container2 h2{
+    font-size:33px;
+    margin-bottom:27px;
+    color:#ccc;
+}
+.sobre-container2 p{
+    margin-bottom:77px;
+}
+.sobre-container,.sobre-container2 b{
+    color:#00daaa;
+}
+/*///////////////////////FIM da SEssao sobre//////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////*/
+
+
+/*///////////////////////Inicio da SEssao DEPOIMENTOS//////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////*/
+div.gambiarra{
+    position:relative;
+}
+section.depoimentos{
+    position: absolute;
+    top:-96px;
+    padding:230px;
+    background-image:url('../imagens/bg_02.png');
+    background-size:cover;
+    width:100%;
+}
+section.depoimentos .container{
+    padding-top:60px;
+    text-align: center;
+    position:relative;
+}
+section.depoimentos h2{
+    font-size:33px;
+    font-weight:normal;
+    position:relative;
+}
+
+section.depoimentos h2 i{
+    position:absolute;
+    left:-29px;
+    top:-22px;
+}
+section.depoimentos i.icon2{
+    position:absolute;
+    left:99%;
+    top:22%;
+    font-size:33px;
+}
+/*///////////////////////FIM da SEssao  DEPOIMENTOS//////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////*/
+.gambiarra-espaco__em-branco{
+    width:100;
+    height:660px;
+}
+
+/*///////////////////////Inicio da SEssao ETAPAS//////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////*/
+
+section.etapas{
+    padding:40px 8%;
+}
+section.etapas > .container{
+    width:calc(100% + 500px);
+    background-color: #2d2d2d;
+}
+section.etapas > h2{
+    text-align:center;
+    color:#3b3e42;
+    font-size:28px;
+    margin-bottom:130px;
+}
+section.etapas h2 b{
+    color:#ccc;
+    font-size:28px;
+}
+.etapas__one{
+    float:left;
+    width:40%;
+    padding-top:90px;
+}
+.etapas__two{
+    float:left;
+    width:60%;
+    padding-left:100px;
+    padding-top:40px;
+}
+
+.etapas__group img{
+    width:56%;
+    float:left;
+    margin-bottom:50px;
+}
+.p{
+    display:none;
+}
+.etapas__group p{
+    float:left;
+    width:44%;
+    padding:150px 0 200px 80px;
+    color:#509d87;
+    font-weight:bold;
+    font-size:20px;
+}
+.etapas__group2{
+    margin-bottom:50px;
+}
+.etapas__group2 .circle{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border:2px solid #ccc;
+    position:relative;
+    float:left;
+}
+.etapas__group2 .circle span{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    font-size:32px;
+    color: #00daaa;
+}
+.circle .line{
+    position:absolute;
+    top:99px;
+    left:50%;
+    z-index:999;
+    transform: translate(-50%,0%);
+    height:48px;
+    width:1px;
+    background:rgb(24, 20, 20);
+}
+.etapas__group2 .etapas__descricao{
+    float:left;
+    width:calc(100% - 100px);
+    padding-left:30px;
+}
+.etapas__descricao > h2{
+    color:#03ca9f;
+    font-size:19px;
+}
+.etapas__descricao p{
+    color:#2d2d2d;
+    font-weight:bold;
+    font-size:14px;
+    max-width:410px;
+}
+
+/*///////////////////////FIM da SEssao ETAPAS//////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////Inicio da SEssao diferencias//////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////*/
+section.diferencias > .container{
+    text-align:center;
+    max-width:700px;
+    padding:60px 0;
+}
+section.diferencias > .container > h2{
+    font-weight:normal;
+    font-size:37px;
+    margin-bottom:95px;
+}
+section.diferencias > .container h2 b.invisalign{
+    color: #00daaa;
+}
+
+.diferencias__single:nth-of-type(1){
+    border-right:2px solid rgb(140,140,140);
+}
+.diferencias__single{
+    float:left;
+    width:50%;
+}
+.diferencias__single h2,
+.item-diferencias-1 span{
+    color:#a9c4b8;
+}
+.diferencias__single h2{
+    font-size:34px;
+    font-weight:normal;
+    margin-bottom:10px;
+}
+.item-diferencias-1{
+    margin-top:14px;
+    position:relative;
+    display:inline-block;
+}
+.item-diferencias-1 span{
+    font-weight:bold;
+    font-size:21px;
+}
+.line-diferencias-1{
+    position:absolute;
+    top:13px;
+    left:0;
+    width:100%;
+    height:3px;
+    background-color:#e89595;
+    transform:rotate(-4deg);
+    z-index:3;
+}
+.item-diferencias-2{
+    margin-top:14px;
+}
+.item-diferencias-2 span{
+    color: #7dd5b0;
+    font-weight:bold;
+    font-size:21px;
+}
+
+/*///////////////////////FIM da SEssao diferencias//////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+@media screen and (max-width:1060px){
+    .gambiarra-espaco__em-branco{
+        height:420px;
+    }
+    nav.desktop{
+        display:none;
+    }
+    nav.mobile i{
+        display:block;
+    }
+
+    nav.mobile i{
+        color:#509d87;
+        font-size:28px;
+        float:right;
+        margin-right:20px;
+        cursor:pointer;
+    }
+    nav.mobile ul{
+        list-style-type:none;
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background-color:#509d87;
+        text-align:center;
+    }
+    nav.mobile ul li{
+        padding:20px 0;
+        border-bottom:2px solid #00daaa;
+    }
+    nav.mobile ul li a{
+        width:100%;
+        text-decoration: none;
+        color:#00daaa;
+        font-size:26px;
+    }
+    
+    .telefone-header{
+        display:none;
+    }
+    .content-header .one{
+        width:100%;
+        text-align:center;
+        padding-top:18px;
+    }
+    .content-header .two{
+        display:none;
+    }
+
+    /*Inicio Sessao Diferenciais*/
+
+    section.diferenciais .diferencial-single{
+        width:50%;
+        text-align:center;
+    }
+    .diferencial-single h2{
+        font-size:23px;
+    }
+    .diferencial-single p{
+        display: inline-block;
+        margin:0;
+        max-width:260px;
+        font-size:14px;
+    }
+    /*FIM Sessao Diferenciais*/
+
+    /*INICIO DA SESSAO SOBRE*/
+
+    section.sobre .container{
+        display: flex;
+        flex-wrap: wrap;
+        left:0;
+    }
+    section.sobre .sobre-container{
+        width:80%;
+        margin:0 auto;
+    }
+
+    section.sobre .sobre-container2{
+        margin-top:32px;
+        width:100%;
+        text-align:center;
+        padding-left:0;
+    }
+    section.sobre .sobre-container2 p{
+        max-width:400px;
+        margin:0 auto;
+        margin-bottom:45px;
+        
+    }
+    
+    /*FIM DA SESSAO SOBRE*/
+    
+    /*INICIO DA SESSAO DEPOIMEN?TOS*/
+    section.depoimentos{
+        padding:120px;
+    }
+    /*FIM DA SESSAO DEPOIMENTOS*/
+
+    /*INICIO DA SESSAO ETAPAS*/
+    .etapas__group{
+        margin-bottom:40px;
+    }
+    .etapas__one{
+        width:100%;
+    }
+    .etapas__two{
+        float:none;
+        width:100%;
+        padding:40px 0% 0px 7%;
+    }
+    .p{
+        display:block;
+    }
+    /*FIM DA SESSAO ETAPAS*/
+}
+
+@media screen and (max-width:800px){
+    .etapas__one{
+       display:none;
+    }
+}
+
+@media screen and (max-width:570px){
+    .center-x-mobile{
+        position:relative;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    .gambiarra-espaco__em-branco{
+        height:270px;
+    }
+    .content-header .one{
+        padding:0 30px;
+    }
+    .content-header .one h2{
+        font-size:26px;
+        text-align:left;
+    }
+    .content-header .one p{
+        text-align:left;
+        font-size:15px;
+    }
+    .content-header .one p b{
+        text-align:left;
+        font-size:17px;
+    }
+    .content-header .one form input[type=email]{
+        width:100%;
+        height:50px;
+    }
+    .content-header .one form input[type=submit]{
+        margin-top:20px;
+    }
+
+    /*Inicio Sessao Diferenciais*/
+    section.diferenciais{
+        padding:0px 0;
+    }
+    section.diferenciais .diferencial-single{
+        width:100%;
+        text-align:center;
+        padding-bottom:40px;
+    }
+    .diferencial-single h2{
+        font-size:23px;
+    }
+    .diferencial-single p{
+        padding-top:16px;
+        font-size:14px;
+    }
+    /*FIM Sessao Diferenciais*/
+
+    /*Inicio da sessao SOBRE*/
+    section.sobre .sobre-container{
+        width:100%;
+    }
+    section.sobre .sobre-container2{
+        margin-bottom:60px;
+    }
+    section.sobre .sobre-container2 h2{
+        font-size:23px;
+        
+    }
+    section.sobre .sobre-container2 p{
+        font-size:14px;
+    }
+    /*FIM DA SESSAO SOBRE*/
+
+    /*INIcio da SESSAO DEPOIMENTOS*/
+    div.gambiarra{
+        position:relative;
+    }
+    section.depoimentos{
+        padding-top:80px;
+        padding-left:0;
+        padding-right:0;
+        padding-bottom:70px;
+    }
+    section.depoimentos .container{
+        padding:10px;
+        text-align: center;
+    }
+    section.depoimentos h2{
+        font-size:23px;
+        width:70%;
+        margin:0 auto;
+    }
+    section.depoimentos h2 i{
+        position:absolute;
+        left:-29px;
+        top:17px;
+    }
+    section.depoimentos i.icon2{
+        position:absolute;
+        left:84%;
+        top:12%;
+        font-size:23px;
+    }
+    /*FIM DA SESSAO DEPOIMENTOS*/
+
+
+    /*INICIO DA SESSAO ETAPAS*/
+    section.etapas{
+        padding:40px 0%;
+    }
+    section.etapas > h2{
+        font-size:23px;
+        width:70%;
+        margin:0 auto;
+    }
+    section.etapas > h2 b{
+        font-size:23px;
+
+    }
+    .etapas__group2 .circle span{
+        position:absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        font-size:32px;
+        color: #00daaa;
+    }
+    .etapas__group2 .etapas__descricao{
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+    .etapas__descricao > h2{
+        color:#03ca9f;
+        font-size:15px;
+    }
+    .etapas__descricao p{
+        font-size:10px;
+    }
+    /*FIM DA SESSAO ETAPAS*/
+
+
+    /*INICIO DA SESSAO DIFERENCIAS*/
+    section.diferencias > .container > h2{
+        font-size:28px;
+
+    }
+    .diferencias__single:nth-of-type(1){
+        border-right:none;
+    }
+    .diferencias__single{
+        clear: both;
+        width:100%;
+        float:none;
+        margin-bottom:40px;
+
+    }
+    /*FIM DA SESSAO DIFERENCIAS*/
+}

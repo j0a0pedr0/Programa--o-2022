@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angula JS</title>
+</head>
+<body>
+    
+
+    <div ng-app="myShoppingList" ng-controller="myCtrl">
+        <ul>
+            <li ng-repeat="t in produtos2">
+                {{t}}<span ng-click="removeItem3($index)">&times;</span>
+            </li>
+            <br><br>
+          <li ng-repeat="x in products">
+              {{x}}<span ng-click="removeItem($index)">&times;</span>
+          </li>
+          <br><br>
+          <li ng-repeat="n in produtos">
+              {{n}}<span ng-click="removeItem2($index)">&times;</span>
+          </li>
+
+
+        </ul>
+        <input ng-model="item"/>
+        <button ng-click="addItem()">Adicionar no carrinho2</button>
+
+        <input ng-model="item2"/>
+        <button ng-click="addItem2()">Adicionar no carrinho1</button>
+
+        <input ng-model="item3"/>
+        <button ng-click="addItem3()">Adicionar no carrinho3</button>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
