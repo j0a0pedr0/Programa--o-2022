@@ -1,0 +1,17 @@
+@bgcor:black;
+@nice-yellow:rgb(253, 253, 124);
+@nice-green:@nice-yellow - rgb(52, 209, 52);
+body{
+    background:@bgcor;
+    div{
+        background: @nice-green;
+        width:100px;
+        height:100px;
+        margin:0 auto;
+        transition:3s;
+    }
+    div:hover{
+        position:relative;
+        top:50px;   
+    }
+}

@@ -1,0 +1,606 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+* input[type=submit],
+* input[type=text],
+* input[type=email],
+* textarea {
+  appearance: none;
+  -webkit-appearance: none;
+}
+html,
+body {
+  height: 100%;
+}
+/*Classes auxiliares*/
+.container {
+  max-width: 1280px;
+  padding: 0 2%;
+  margin: 0 auto;
+}
+.clear {
+  clear: both;
+}
+/*Todos os navegadores*/
+header {
+  background-image: url("../imagens/bg.jpg");
+  min-height: 450px;
+  padding: 30px 0;
+  background-size: cover;
+  background-position: center;
+  /*FIM DO MENU-TOPO*/
+  /*FIM DA CHAMADA-HEADER*/
+}
+header .menu-topo {
+  /*FIM NAV-MOBILE*/
+  /*FIM NAV_DESKTOP*/
+}
+header .menu-topo .logo {
+  background-image: url("../imagens/logo.png");
+  background-size: 100% 100%;
+  float: left;
+  width: 132px;
+  height: 20px;
+  cursor: pointer;
+}
+header .menu-topo nav.mobile {
+  display: none;
+  float: right;
+}
+header .menu-topo nav.mobile i {
+  font-size: 40px;
+  margin-right: 15px;
+  cursor: pointer;
+  color: white;
+}
+header .menu-topo nav.mobile ul {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 0px 0px 20px 0px;
+  top: 70px;
+  background: #31475e;
+  display: none;
+  list-style-type: none;
+  text-align: center;
+  font-size: 25px;
+}
+header .menu-topo nav.mobile a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+}
+header .menu-topo nav.mobile li {
+  padding: 14px 0px 14px 0px;
+  border-bottom: 1px solid #668cb4;
+}
+header .menu-topo nav.mobile li:hover {
+  background-color: #668cb4;
+}
+header .menu-topo nav.mobile li a:hover {
+  transform: scale(1.5, 1.5);
+}
+header .menu-topo nav.mobile .btn-nav {
+  margin-top: 13px;
+  display: inline-block;
+  border: 1px solid white;
+  padding: 10px 18px;
+  border-radius: 20px;
+  transform: scale(1, 1);
+}
+header .menu-topo nav.mobile li:hover a {
+  color: #000000;
+  width: 100%;
+  transform: scale(1, 1);
+}
+header .menu-topo nav.desktop {
+  float: right;
+}
+header .menu-topo nav.desktop ul {
+  list-style-type: none;
+}
+header .menu-topo nav.desktop li {
+  display: inline-block;
+  margin: 0 15px;
+}
+header .menu-topo nav.desktop li:hover {
+  transform: scale(1.2, 1.2);
+}
+header .menu-topo nav.desktop a {
+  color: white;
+  text-decoration: none;
+}
+header .menu-topo nav.desktop li.btn-nav {
+  padding: 3px 8px;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+header .menu-topo nav.desktop li.btn-nav:hover {
+  background: white;
+  color: black;
+}
+header .menu-topo nav.desktop li.btn-nav:hover a {
+  color: black;
+}
+header div.chamada-header {
+  padding: 110px 0;
+}
+header div.chamada-header h2 {
+  font-size: 57px;
+  color: white;
+  font-weight: normal;
+}
+header div.chamada-header p {
+  font-size: 17px;
+  color: white;
+  margin-top: 10px;
+  max-width: 600px;
+  display: inline-block;
+}
+header div.chamada-header input[type=email] {
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 20px;
+  background: white;
+  width: 270px;
+  height: 35px;
+  border: 0;
+  padding-left: 10px;
+}
+header div.chamada-header input[type=email]:focus {
+  outline: 0;
+}
+header div.chamada-header input[type=submit] {
+  margin-top: 20px;
+  width: 180px;
+  height: 45px;
+  border-radius: 20px;
+  border: 0;
+  background-color: #ff5f27;
+  color: white;
+  cursor: pointer;
+}
+header div.chamada-header input[type=submit]:hover {
+  transform: scale(1.1, 1.1);
+}
+/*FIM DO HEADER*/
+section.descricao-danki {
+  text-align: Center;
+  padding: 60px 0;
+}
+section.descricao-danki p {
+  font-weight: lighter;
+  font-size: 23px;
+  font-style: italic;
+  display: inline-block;
+  max-width: 680px;
+  color: #173d66;
+}
+section.descricao-danki i {
+  display: none;
+}
+/*FiM DA SESSAO DESCRICAO_DANKI*/
+section.descricao-danki-2 {
+  padding: 50px 0;
+}
+section.descricao-danki-2 .container {
+  max-width: 980px;
+  /*texto-descricao*/
+}
+section.descricao-danki-2 .container .texto-descricao {
+  float: left;
+  width: 50%;
+}
+section.descricao-danki-2 .container .texto-descricao h3 {
+  font-size: 22px;
+  color: #31475e;
+  font-weight: normal;
+  line-height: 32px;
+  margin-top: 40px;
+}
+section.descricao-danki-2 .container .texto-descricao p {
+  font-size: 15px;
+  color: #31475e;
+  margin-top: 20px;
+  line-height: 25px;
+}
+section.descricao-danki-2 .container img {
+  float: left;
+  max-width: 100%;
+  width: 50%;
+  padding-left: 80px;
+}
+/*FIM DA DESCRICAO_DANKI_2*/
+section.descricao-danki-3 {
+  padding: 30px 0 120px 0;
+  /*container*/
+}
+section.descricao-danki-3 .container {
+  width: 100%;
+  max-width: 980px;
+  background-image: url('../imagens/bg2.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  min-height: 450px;
+  position: relative;
+}
+section.descricao-danki-3 .container .box-depoimento {
+  display: inline-block;
+  position: absolute;
+  left: 35%;
+  top: 53%;
+  padding: 40px;
+  width: 100%;
+  max-width: 650px;
+  background-color: white;
+  -webkit-box-shadow: 0px 15px 43px -3px #3d3d3d;
+  -moz-box-shadow: 0px 15px 43px -3px #3d3d3d;
+  box-shadow: 0px 15px 43px -3px #3d3d3d;
+}
+section.descricao-danki-3 .container .box-depoimento p {
+  font-size: 28px;
+  font-weight: normal;
+  color: #173d66;
+}
+section.descricao-danki-3 .container .box-depoimento p:nth-of-type(2) {
+  margin-top: 24px;
+  font-weight: bold;
+}
+/*FIM DA descricao-danki-3*/
+section.servicos {
+  padding: 35px 0;
+}
+section.servicos .container {
+  max-width: 1180px;
+}
+section.servicos .container .title-servicos {
+  text-align: center;
+}
+section.servicos .container .title-servicos h3 {
+  color: #31475e;
+  font-size: 26px;
+  font-weight: normal;
+}
+section.servicos .container .flex-servicos {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+section.servicos .container .flex-servicos .gambiarra-borda {
+  border: 30px solid white;
+  width: 33.3%;
+  margin-bottom: 20px;
+}
+section.servicos .container .flex-servicos .gambiarra-borda .box-servicos {
+  min-height: 445px;
+  background: white;
+  -webkit-box-shadow: 0px 19px 26px 5px rgba(61, 61, 61, 0.36);
+  -moz-box-shadow: 0px 19px 26px 5px rgba(61, 61, 61, 0.36);
+  box-shadow: 0px 19px 26px 5px rgba(61, 61, 61, 0.36);
+}
+section.servicos .container .flex-servicos .gambiarra-borda .box-servicos img {
+  width: 100%;
+}
+section.servicos .container .flex-servicos .gambiarra-borda .box-servicos .box-servicos-wraper {
+  padding: 30px;
+}
+section.servicos .container .flex-servicos .gambiarra-borda .box-servicos .box-servicos-wraper h2 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #31475e;
+}
+section.servicos .container .flex-servicos .gambiarra-borda .box-servicos .box-servicos-wraper p {
+  margin: 8px 0;
+  line-height: 1.6;
+  color: #6a7c92;
+  font-weight: lighter;
+  font-size: 15px;
+}
+section.servicos .container .flex-servicos .gambiarra-borda .box-servicos .box-servicos-wraper a {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #6a7c92;
+  color: #6a7c92;
+  padding: 6px 12px;
+  border-radius: 14px;
+}
+section.servicos .container .flex-servicos .gambiarra-borda .box-servicos .box-servicos-wraper a:hover {
+  background-color: #668cb4;
+  color: black;
+  transform: scale(1.2, 1.2);
+}
+section.portfolio {
+  padding: 20px 0;
+  background: white;
+}
+section.portfolio .container {
+  max-width: 1080px;
+  padding: 15px 2%;
+  background-color: #f7f7f7;
+}
+section.portfolio .container h2 {
+  text-align: center;
+  font-weight: normal;
+  color: #31475e;
+}
+section.portfolio .container .empresas {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.portfolio .container .empresas .empresas-single {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 25%;
+  border-width: 1px 0 1px 1px;
+  border-color: #ececec;
+  border-style: solid;
+}
+section.portfolio .container .empresas .empresas-single:last-child {
+  border: 1px solid #ececec;
+}
+section.formulario {
+  padding: 50px 0;
+}
+section.formulario .container {
+  max-width: 980px;
+}
+section.formulario .container h2 {
+  text-align: center;
+  font-weight: normal;
+  color: #31475c;
+}
+section.formulario .container form {
+  margin-top: 40px;
+}
+section.formulario .container form input[type="text"],
+section.formulario .container form input[type="email"],
+section.formulario .container form input[type="number"] {
+  width: 100%;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid #ebebeb;
+  margin-bottom: 14px;
+  padding-left: 9px;
+}
+section.formulario .container form input[type="text"]:focus,
+section.formulario .container form input[type="email"]:focus,
+section.formulario .container form input[type="number"]:focus {
+  outline: 0;
+}
+section.formulario .container form input[type="number"]::-webkit-outer-spin-button,
+section.formulario .container form input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+section.formulario .container form textarea {
+  width: 100%;
+  height: 80px;
+  resize: vertical;
+  border-radius: 30px;
+  border: 1px solid #ebebeb;
+  margin-top: 9px;
+  padding: 9px;
+}
+section.formulario .container form textarea:focus {
+  outline: 0;
+}
+section.formulario .container form input[type=submit] {
+  margin-top: 20px;
+  width: 130px;
+  height: 45px;
+  border-radius: 20px;
+  border: 0;
+  background-color: #ff5f27;
+  color: white;
+  cursor: pointer;
+}
+section.formulario .container form input[type=submit]:hover {
+  transform: scale(1.1, 1.1);
+}
+footer {
+  padding: 60px 0 30px 0;
+}
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .container .box-footer {
+  width: 33.3%;
+  padding: 0 15px;
+}
+footer .container .box-footer h2 {
+  color: #31475e;
+  font-size: 22px;
+  font-weight: normal;
+}
+footer .container .box-footer p {
+  margin-top: 10px;
+  color: #31475e;
+  font-weight: 300;
+  font-size: 15px;
+}
+footer .container .box-footer form {
+  margin-top: 10px;
+}
+footer .container .box-footer form input[type="text"] {
+  width: calc(50%);
+  height: 43px;
+  border-radius: 50px;
+  margin-right: 10px;
+  padding-left: 10px;
+  border: 1px solid #31475e;
+}
+footer .container .box-footer form input[type="text"]:focus {
+  outline: 0;
+}
+footer .container .box-footer form button {
+  width: 63px;
+  height: 43px;
+  border: 1px solid #31475e;
+  border-radius: 50px;
+  background: white;
+}
+footer .container .box-footer form button i {
+  color: #31475e;
+}
+@media screen and (max-width: 1035px) {
+  nav.desktop {
+    display: none;
+  }
+  nav.mobile {
+    display: block !important;
+  }
+  section.descricao-danki {
+    position: relative;
+  }
+  section.descricao-danki p {
+    font-size: 18px;
+  }
+  section.descricao-danki i {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    font-size: 24px;
+  }
+  /*descricao-danki*/
+  section.descricao-danki-2 {
+    /*container*/
+  }
+  section.descricao-danki-2 .container {
+    text-align: center;
+    /*texto-descricao*/
+  }
+  section.descricao-danki-2 .container .texto-descricao {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  section.descricao-danki-2 .container .texto-descricao h3 {
+    font-size: 20px;
+    margin-top: 14px;
+  }
+  section.descricao-danki-2 .container .texto-descricao p {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  section.descricao-danki-2 .container img {
+    display: inline-block;
+    float: none;
+    max-width: 100%;
+    min-width: 270px;
+    width: 80%;
+    padding-left: 0px;
+  }
+  /*descricao-danki-2*/
+  section.descricao-danki-3 {
+    padding: 30px 0;
+    /*container*/
+  }
+  section.descricao-danki-3 .container {
+    background-size: cover;
+    min-height: 450px;
+    position: relative;
+  }
+  section.descricao-danki-3 .container .box-depoimento {
+    display: inline-block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding: 40px 7px 40px 10px;
+    width: 90%;
+    max-width: 650px;
+    background-color: white;
+  }
+  section.descricao-danki-3 .container .box-depoimento p {
+    font-size: 19px;
+    font-weight: normal;
+    color: #173d66;
+  }
+  section.descricao-danki-3 .container .box-depoimento p:nth-of-type(2) {
+    margin-top: 24px;
+    font-weight: bold;
+  }
+  /*descricao-danki-3*/
+  section.servicos .container .flex-servicos .gambiarra-borda {
+    width: 100%;
+    text-align: center;
+    border: 0;
+    margin-bottom: 50px;
+  }
+  section.servicos .container .flex-servicos .gambiarra-borda .box-servicos {
+    display: inline-block;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 750px) {
+  header {
+    max-height: 700px !important;
+    padding: 30px 0 0 0 0;
+    /*INICIO DA CHAMADA_HEADER*/
+  }
+  header div.chamada-header {
+    text-align: center;
+  }
+  header div.chamada-header h2 {
+    font-size: 38px;
+  }
+  header div.chamada-header input[type="submit"] {
+    display: block;
+    margin: 14px auto;
+  }
+  header div.chamada-header input[type="email"] {
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 350px;
+  }
+  /*FIM DA CHAMADA-HEADER*/
+  /*INICIO DA SESSAO servicos*/
+  section.servicos .container .flex-servicos .gambiarra-borda {
+    width: 100%;
+    text-align: center;
+  }
+  section.servicos .container .flex-servicos .gambiarra-borda .box-servicos {
+    display: inline-block;
+    width: 90%;
+    max-width: 430px;
+    min-height: 450px;
+  }
+  section.servicos .container .flex-servicos .gambiarra-borda .box-servicos .box-servicos-wraper p {
+    font-size: 14px;
+  }
+  /*FIM DA SESSAO SERVICOS*/
+  section.portfolio .container .empresas .empresas-single {
+    width: 100%;
+    max-width: 600px;
+    margin: 15px auto;
+    border: 1px solid #ececec;
+    padding: 9px 0;
+  }
+  /*FIM DA SESSAO PORTFOLIO*/
+  section.formulario .container h2 {
+    font-size: 19px;
+  }
+  section.formulario .container form {
+    text-align: center;
+  }
+  section.formulario .container form input[type=submit] {
+    display: inline-block;
+  }
+  /*FIM DA SESSAO FORMULARIO*/
+  footer {
+    padding: 10px;
+    border-top: 1px solid #31475c;
+  }
+  footer .container .box-footer {
+    width: 100%;
+    margin-bottom: 19px;
+    text-align: center;
+  }
+  /*FIM DO FOOTER*/
+}

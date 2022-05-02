@@ -1,0 +1,40 @@
+
+$corbg: orange;
+.h2{
+    font-size:34px;
+    color:lightblue;
+    text-decoration:underline;
+    text-align:center;
+}
+@mixin padraoParagrafo(){
+    font-size:24px;
+    color:#ccc;
+    font-weight:bold;
+    text-align:center;
+}
+@mixin centralizarNoMeio(){
+    transform: translateX(-50%);
+    position:relative;
+    left:50%;
+}
+
+div{
+    background:$corbg;
+    width:200px / 200px * 60%;
+    height:100px;
+    border:0;
+    text-align:center;
+    @include centralizarNoMeio();
+    h2{
+        @extend .h2;
+    }
+    p{
+        @include padraoParagrafo();
+    }
+    a{
+        color:red;
+        b{
+            color:purple;
+        }
+    }
+}

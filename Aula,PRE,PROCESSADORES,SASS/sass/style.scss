@@ -1,0 +1,16 @@
+
+$corbg: orange;
+$x-center: transform(-50%);
+
+div{
+    background:$corbg;
+    width:100px;
+    height:100px;
+    border:0;
+    a{
+        color:red;
+        b{
+            color:purple;
+        }
+    }
+}

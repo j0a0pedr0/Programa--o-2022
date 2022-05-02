@@ -1,0 +1,18 @@
+@bgcor:black;
+@nice-yellow:rgb(253, 253, 124);
+@nice-green:@nice-yellow - rgb(52, 209, 52);
+@width:300px;
+body{
+    background:@nice-yellow;
+}
+div{
+    @width:100px;
+    width:@width;
+    height:300px;
+    background:lighten(@bgcor, 50%);
+    margin:0 auto;
+}
+p{
+    width:@width;
+    background:green;
+}
