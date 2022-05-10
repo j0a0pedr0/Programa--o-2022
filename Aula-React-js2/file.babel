@@ -1,4 +1,5 @@
-var container = document.getElementById('main');
+var container = document.getElementById('cabecalho');
+var sobre = document.getElementById('sobre');
 
 class Box extends React.Component{
 
@@ -21,12 +22,38 @@ class Box extends React.Component{
 
 }
 
-class Formulario extends React.Component{
+class Cabecalho extends React.Component{
     
     render(){
-        return (<form><input type="text"/><input type="submit"/></form>)
+        return (<header>
+                    <div class="container">
+                        <div class="logo"><img src="./imagens/danki-logo.png"></img></div>
+                        
+                        <nav class="desktop">
+                            <ul>
+                                <li>Home</li>
+                                <li>Sobre</li>
+                                <li>Contato</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>)
+    }
+}
+
+class Sobre extends React.Component{
+
+    render(){
+        return (<section class="sobre">
+                    <div class="container">
+                            <h2>Meu conteudo E assim e asssado</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur pretium molestie. Nunc sagittis iaculis volutpat. Nunc finibus tellus erat, vitae faucibus magna ultrices ac. Nunc non mollis ex. Etiam at tempus quam. Donec iaculis lacinia quam at ornare. Sed dapibus fermentum tortor nec ullamcorper. Vivamus vitae arcu erat. Vivamus eget imperdiet quam. Aenean aliquet dui eget dapibus ultricies. Praesent rhoncus lectus vitae ex iaculis, sed pharetra metus vestibulum. Nunc ut tincidunt quam.</p>
+                    </div>
+                </section>)
     }
 }
 
 
-ReactDOM.render(<div class="principal-react"><Formulario /><Box /><Box /><Box /></div>,container)
+ReactDOM.render(<div class="principal-react"><Cabecalho /></div>,container)
+ReactDOM.render(<div class="sobre-react"><Sobre /><Sobre /><Sobre /><Sobre /></div>,sobre)
+

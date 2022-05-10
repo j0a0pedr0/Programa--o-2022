@@ -187,7 +187,7 @@ section.descricao-danki-2 {
   padding: 50px 0;
 }
 section.descricao-danki-2 .container {
-  max-width: 980px;
+  max-width: 1280px;
   /*texto-descricao*/
 }
 section.descricao-danki-2 .container .texto-descricao {
@@ -220,7 +220,7 @@ section.descricao-danki-3 {
 }
 section.descricao-danki-3 .container {
   width: 100%;
-  max-width: 980px;
+  max-width: 1280px;
   background-image: url('../imagens/bg2.jpg');
   background-size: 100% 100%;
   background-position: center;
@@ -389,6 +389,8 @@ section.formulario .container form textarea:focus {
   outline: 0;
 }
 section.formulario .container form input[type=submit] {
+  display: block;
+  margin: 0 auto;
   margin-top: 20px;
   width: 130px;
   height: 45px;
