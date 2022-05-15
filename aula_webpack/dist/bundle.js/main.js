@@ -1,0 +1,1 @@
+(()=>{var r={86:r=>{var o={printarNome:function(){alert("ola mundo")}};r.exports=o}},o={};(function t(e){var n=o[e];if(void 0!==n)return n.exports;var a=o[e]={exports:{}};return r[e](a,a.exports,t),a.exports})(86).printarNome()})();
