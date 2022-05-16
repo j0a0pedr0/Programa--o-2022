@@ -1,11 +1,11 @@
 
-import Logo from '../src/image/logo.png';
+import Logo from '../../src/image/logo.png';
 
 function Header(){
     return(
         <div className="header">
            <div className="center">
-              <header>
+              <header onClick={e => alert('ola mundo')} >
                 <div className="logo">
                   <a herf="#"><img src={Logo}/></a>
                 </div>
@@ -19,6 +19,7 @@ function Header(){
 
 
           </div>
+        
         </div>
     )
 }
