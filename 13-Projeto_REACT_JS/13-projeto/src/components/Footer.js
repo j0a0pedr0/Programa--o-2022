@@ -10,7 +10,7 @@ function Footer(){
                 <div className="footer">
                     <img src={Logo}/>
                 </div>
-                <div className="footer">
+                <div className="footer two">
                     <FaFacebookF className='img' size={25}/>
                     <BsInstagram className='img' size={25}/>
                     <BsTwitter className='img' size={25}/>

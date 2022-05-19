@@ -174,6 +174,7 @@ section.sobre .center .sobre-single .sobre-conteudo {
 /*FIM DO SOBRE*/
 section.galeria {
   padding: 20px;
+  width: 100%;
 }
 section.galeria .center .galeria-wrap {
   width: 100%;
@@ -237,9 +238,11 @@ section.lojas-app .center .texto-loja .icons-app {
 }
 section.lojas-app .center .texto-loja .icons-app img {
   padding: 0 18px;
+  cursor: pointer;
 }
 section.lojas-app .center .texto-loja .icons-app .img {
   margin: 0 19px;
+  cursor: pointer;
 }
 section.lojas-app .center .logo-loja {
   background-color: #38ee2b;
@@ -262,6 +265,9 @@ footer .img {
 footer .center {
   max-width: 1400px;
   display: flex;
+}
+footer .center .two {
+  padding-top: 19px;
 }
 footer .center .footer {
   width: 33.3%;
@@ -317,5 +323,229 @@ footer .center .footer p {
   }
   section.sobre .center .sobre-single {
     width: 100%;
+  }
+  section.galeria {
+    padding: 20px 4px 35px 4px;
+  }
+  section.galeria .center .galeria-wrap {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: 300px;
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+  }
+  section.galeria .center .galeria-wrap .img-left {
+    background-color: #30851d;
+    padding: 30px;
+    background-image: url(image/galeria_01.jpg);
+    background-size: 100% 100%;
+  }
+  section.galeria .center .galeria-wrap .img-right {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  section.galeria .center .galeria-wrap .img-right .galeria-img3 {
+    height: 250px;
+    width: 49.5%;
+    margin-right: 0.5%;
+    background-image: url(image/galeria-2.jpg);
+    background-size: 100% 100%;
+  }
+  section.galeria .center .galeria-wrap .img-right .galeria-img2 {
+    height: 250px;
+    background-size: 100% 100%;
+    background-image: url(image/galeria-3.jpg);
+    width: 49.5%;
+    margin-left: 0.5%;
+  }
+  /*FIM DA GALERIA*/
+  section.lojas-app .center {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  section.lojas-app .center .texto-loja {
+    width: 100%;
+  }
+  section.lojas-app .center .icons-app img {
+    width: 50%;
+  }
+  section.lojas-app .center .icons-app .img {
+    width: 33.3%;
+    margin: 14px 0 0 0 !important;
+  }
+  section.lojas-app .center .logo-loja {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 16px;
+    position: relative;
+    top: 30px;
+  }
+  section.lojas-app .center .logo-loja img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  section.topo {
+    padding: 20px 8px 40px 8px;
+  }
+  section.topo .center {
+    display: flex;
+  }
+  section.topo .center .texto-topo {
+    padding: 10px 8px;
+    text-align: center;
+  }
+  section.topo .center .texto-topo h2 {
+    padding: 10px 0;
+    font-size: 26px;
+    text-align: center;
+  }
+  section.topo .center .texto-topo p {
+    font-size: 20px;
+  }
+  section.topo .center .texto-topo .mobile-app {
+    margin: 10px;
+  }
+  section.topo .center .texto-topo .mobile-app img:last-child {
+    margin-top: 5px;
+  }
+  section.topo .center .img-topo img {
+    width: 100%;
+  }
+  /*FIM SESSAO TOPO*/
+  section.depoimentos {
+    padding: 60px 10px 20px 10px;
+  }
+  /*FIM DEPOIMENTOS*/
+  section.sobre {
+    padding: 10px;
+  }
+  section.sobre .center {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 8px 10px 8px;
+  }
+  /*FIM DO SOBRE*/
+  section.galeria {
+    padding: 20px 4px 35px 4px;
+  }
+  section.galeria .center .galeria-wrap {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: 300px;
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+  }
+  section.galeria .center .galeria-wrap .img-left {
+    background-color: #30851d;
+    padding: 30px;
+    background-image: url(image/galeria_01.jpg);
+    background-size: 100% 100%;
+  }
+  section.galeria .center .galeria-wrap .img-right {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section.galeria .center .galeria-wrap .img-right .galeria-img3 {
+    height: 250px;
+    width: 100%;
+    background-image: url(image/galeria-2.jpg);
+    background-size: 100% 100%;
+  }
+  section.galeria .center .galeria-wrap .img-right .galeria-img2 {
+    height: 250px;
+    background-size: 100% 100%;
+    background-image: url(image/galeria-3.jpg);
+    width: 100%;
+  }
+  /*FIM DA GALERIA*/
+  section.lojas-app .center {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 10px 60px 10px;
+  }
+  section.lojas-app .center .texto-loja {
+    width: 100%;
+  }
+  section.lojas-app .center .texto-loja .titulo-loja {
+    color: white;
+    text-align: center;
+  }
+  section.lojas-app .center .texto-loja .titulo-loja h2 {
+    margin-top: 25px;
+    display: inline-block;
+    padding-bottom: 20px;
+  }
+  section.lojas-app .center .texto-loja .titulo-loja .line {
+    height: 3px;
+    background-color: white;
+    width: 170px;
+    margin: 0 auto;
+  }
+  section.lojas-app .center .texto-loja .p {
+    text-align: center;
+  }
+  section.lojas-app .center .texto-loja .p p {
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px 0 30px 0;
+    color: #f7f0f0;
+  }
+  section.lojas-app .center .texto-loja .icons-app {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.lojas-app .center .texto-loja .icons-app img {
+    padding: 0 0px;
+    width: 50%;
+    margin-bottom: 14px;
+    cursor: pointer;
+  }
+  section.lojas-app .center .texto-loja .icons-app .img {
+    margin: 0 19px;
+    cursor: pointer;
+  }
+  section.lojas-app .center .logo-loja {
+    background-color: #38ee2b;
+    padding: 10px;
+    display: flex;
+    height: 90px !important;
+    width: 100%;
+    margin-top: 70px;
+    justify-content: center;
+  }
+  section.lojas-app .center .logo-loja img {
+    max-width: 100%;
+  }
+  /*FIM LOJA_APP*/
+  footer {
+    padding: 20px;
+  }
+  footer .img {
+    margin: 0 19px;
+  }
+  footer .center {
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer .center .two {
+    padding-top: 19px;
+  }
+  footer .center .footer {
+    width: 100%;
+    text-align: center;
+  }
+  footer .center .footer img {
+    display: none;
+  }
+  footer .center .footer p {
+    font-weight: bold;
+    margin-top: 15px;
   }
 }

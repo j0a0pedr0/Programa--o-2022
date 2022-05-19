@@ -14,7 +14,7 @@ function Lojas_app(){
                         <h2>JOGUE EM QUALQUER PLATAFORMA</h2>
                         <div className="line"></div>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et tempor augue. Nam nec ligula magna. Praesent facilisis, mauris sed consectetur ornare, dui lorem posuere arcu, id lobortis risus orci vel urna. Maecenas fermentum porttitor mi a dictum. Fusce aliquets</p>
+                   <div className='p'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et tempor augue. Nam nec ligula magna. Praesent facilisis, mauris sed consectetur ornare, dui lorem posuere arcu, id lobortis risus orci vel urna. Maecenas fermentum porttitor mi a dictum. Fusce aliquets</p></div> 
                     <div className="icons-app">
                         <img src={GooglePlay}/>
                         <img src={Appstore}/>

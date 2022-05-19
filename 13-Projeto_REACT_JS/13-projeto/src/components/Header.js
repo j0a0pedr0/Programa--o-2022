@@ -1,19 +1,21 @@
 
 import Logo from '../../src/image/logo.png';
-
+import '.././App.css';
+import Menu from './funcao_menu_mobile/Menu';
+import Menu_Mobile from './funcao_menu_mobile/Menu_Mobile';
 function Header(){
     return(
         <div className="header">
            <div className="center">
-              <header onClick={e => alert('ola mundo')} >
+              <header onClick={()=>{
+                var w = window.screen.width;
+                console.log(w)
+              }}>
                 <div className="logo">
                   <a herf="#"><img src={Logo}/></a>
                 </div>
-                <div className='menu'>
-                    <a href='#'>Sobre</a>
-                    <a href='#'>Depoimentos</a>
-                    <a className='btn-cta' href='#'>Baixar Agora!</a>
-                </div>
+                <Menu/>
+                <Menu_Mobile/>
                 <div className='clear'></div>
               </header>
 

@@ -9,6 +9,7 @@ import Lojas_app from './components/Lojas_app';
 import Footer from './components/Footer.js'
 
 
+
 function App() {
   return (
     <div className="App">
@@ -19,7 +20,6 @@ function App() {
           <Galeria/>
           <Lojas_app/>
           <Footer/>
-
     </div>
   );
 }
